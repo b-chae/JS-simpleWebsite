@@ -1,0 +1,52 @@
+body{
+    background-color: white;
+    color:white;
+    vertical-align: middle;
+    text-align:center;
+    margin-top:25%;
+    font-size:180%;
+}
+
+h1{
+    font-size:200%;
+}
+
+.toDoList{
+    font-size:70%;
+}
+
+.clicked{
+    color:#9b59b6;
+    transition: color 0.5s ease-in-out;
+}
+
+.form, .greetings{
+    display:none;
+}
+
+.showing{
+    display:block;
+}
+
+.weather{
+    font-size:50%;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity : 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    animation: fadeIn .5s linear;
+}
